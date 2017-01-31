@@ -1,6 +1,17 @@
 <?php
 
 /**
+ * Example of retrieving course details from Bridgwater & Taunton College's internal course management system.
+ * Using a simple web service which accepts a course code and when valid, returns the course details. Details
+ * include information such as the Offering ID, Level, Location, Start Date, Fees, Availability, etc. This
+ * example uses cURL to pass the course code to the web service. It displays the entire response in a table,
+ * however on a real project a subset of the information would likely be required and the output formatted
+ * for the specific display. An example of how we use this on the main Bridgwater & Taunton College website
+ * can be seen here http://www.bridgwater.ac.uk/course.php?sector=2&subject=250&course=1514. The information
+ * could also be stored after retrieval if necessary. 
+ */
+
+/**
  * Retrieve course details
  * @param string $code
  * @return array $events
@@ -56,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
-	<title>Retrieve course details via BTC simple web service</title>
+	<title>Retrieve course details via BTC web service</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
