@@ -1,4 +1,4 @@
-#Course Details Retrieval via BTC Web Service
+# Course Details Retrieval via BTC Web Service
 
 Example of retrieving course details from Bridgwater & Taunton College's internal course management system. Using a simple web service which accepts a course code and when valid, returns the course details. Details include information such as the Offering ID, Level, Location, Start Date, Fees, Availability, etc.
 
